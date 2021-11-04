@@ -12,6 +12,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="8dp"
+        android:onClick="btn2Click"
         android:text="@string/btn_2"
         app:layout_constraintEnd_toStartOf="@+id/btn3"
         app:layout_constraintTop_toBottomOf="@+id/btn5" />
@@ -23,6 +24,7 @@
         android:layout_marginTop="9dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
+        android:onClick="btnCalculate"
         android:text="@string/btn_Equal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,6 +60,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="8dp"
+        android:onClick="btn6Click"
         android:text="@string/btn_6"
         app:layout_constraintEnd_toStartOf="@+id/btnMulti"
         app:layout_constraintTop_toBottomOf="@+id/btn9" />
@@ -80,6 +83,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="10dp"
+        android:onClick="btn1Click"
         android:text="@string/btn_1"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
         app:layout_constraintTop_toBottomOf="@+id/btn4" />
@@ -90,6 +94,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
+        android:onClick="btn7Click"
         android:text="@string/btn_7"
         app:layout_constraintEnd_toStartOf="@+id/btn8"
         app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
@@ -129,6 +134,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="8dp"
+        android:onClick="btn5Click"
         android:text="@string/btn_5"
         app:layout_constraintEnd_toStartOf="@+id/btn6"
         app:layout_constraintTop_toBottomOf="@+id/btn8" />
@@ -150,6 +156,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
+        android:onClick="btnPlusClick"
         android:text="@string/btn_Plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnEqual"
@@ -172,6 +179,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="10dp"
+        android:onClick="btnMinusClick"
         android:text="@string/btn_Minus"
         app:layout_constraintEnd_toStartOf="@+id/btnEqual"
         app:layout_constraintTop_toBottomOf="@+id/btnMulti" />
@@ -182,6 +190,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
+        android:onClick="btn8Click"
         android:text="@string/btn_8"
         app:layout_constraintEnd_toStartOf="@+id/btn9"
         app:layout_constraintTop_toBottomOf="@+id/btnCE" />
@@ -192,6 +201,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="8dp"
+        android:onClick="btn3Click"
         android:text="@string/btn_3"
         app:layout_constraintEnd_toStartOf="@+id/btnMinus"
         app:layout_constraintTop_toBottomOf="@+id/btn6" />
@@ -214,6 +224,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
+        android:onClick="btn0Click"
         android:text="@string/btn_0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnDot"
@@ -226,6 +237,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="10dp"
+        android:onClick="btn4Click"
         android:text="@string/btn_4"
         app:layout_constraintEnd_toStartOf="@+id/btn5"
         app:layout_constraintTop_toBottomOf="@+id/btn7" />
@@ -247,6 +259,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
+        android:onClick="btn9Click"
         android:text="@string/btn_9"
         app:layout_constraintEnd_toStartOf="@+id/btnDEvi"
         app:layout_constraintTop_toBottomOf="@+id/btnDeleteAll" />
@@ -280,6 +293,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
+        android:onClick="btnDeviClick"
         android:text="@string/btn_Devision"
         app:layout_constraintEnd_toStartOf="@+id/btnPrecentage"
         app:layout_constraintTop_toBottomOf="@+id/btnChangeSymbol" />
@@ -290,6 +304,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="10dp"
+        android:onClick="btnMultClick"
         android:text="@string/btn_Multiply"
         app:layout_constraintEnd_toStartOf="@+id/btn1DevByX"
         app:layout_constraintTop_toBottomOf="@+id/btnDEvi" />
