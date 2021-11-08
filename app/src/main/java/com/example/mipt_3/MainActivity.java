@@ -29,17 +29,17 @@ public class MainActivity extends AppCompatActivity {
             if(operation.equals("0")){
                 if (Value.equals("0")){}
                 else{
-                    operation = Value;
+                    operation = Value.toString();
                     newOperation = true;
                 }
             }
             else{
                 newOperation = true;
-                operation = operation + Value;
+                operation = operation.concat(Value.toString());
             }
         }
         else{
-            operation = operation + Value;
+            operation = operation.concat(Value.toString());
         }
         mainScreen.setText(operation);
     }
@@ -89,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
     public void btn9Click (View view){
         setWorkings("9");
     }
+    public void btnDotClick (View view){
+        setWorkings(".");
+    }
 
     public void btnPlusClick (View view){
         setWorkings("+");
@@ -101,5 +104,38 @@ public class MainActivity extends AppCompatActivity {
     }
     public void btnMultClick (View view){
         setWorkings("*");
+    }
+
+    public void btnDeleteAllClick (View view){
+        mainScreen.setText("0");
+        operation = "0";
+        newOperation = false;
+    }
+    public void btnDeleteClick (View view){
+        operation = operation.substring(0, operation.length() - 1);
+        mainScreen.setText(operation);
+    }
+    public void btnSqrtClick (View view){
+        btnCalculate(view);
+        double r = Math.sqrt(Double.parseDouble(operation));
+        operation = String.valueOf(r);
+        mainScreen.setText(operation);
+    }
+    public void btnChangeSymbolClick (View view){
+        btnCalculate(view);
+
+        if(operation.startsWith("-")){
+            String newStr = operation.toString().replaceFirst("-","");
+            operation = newStr;
+            mainScreen.setText(operation);
+
+        }
+        else{
+            String newStr = operation.toString().replaceFirst("","-");
+            operation = newStr;
+            mainScreen.setText(operation);
+
+        }
+
     }
 }
